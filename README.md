@@ -2,8 +2,8 @@
 
 Programming language: C++ 17
 
-Main file: [main.cpp](Advent-of-Code-2020/main.cpp)
-My utils header file: [my_AoC_utils.h](Advent-of-Code-2020/my_AoC_utils.h)
+Main file: [main.cpp](Advent-of-Code-2020/main.cpp)<br/>
+My "utils" header file: [my_AoC_utils.h](Advent-of-Code-2020/my_AoC_utils.h)
 
 | Day | Task                                                                      | View Solution                                                             |
 | --- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
