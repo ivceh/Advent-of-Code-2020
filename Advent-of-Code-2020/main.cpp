@@ -3,9 +3,23 @@ int i, j, k, n, cnt, cnt2;
 ifstream in;
 string line;
 
-void Day01(string), Day02(string), Day03(string), Day04(string), Day05(string);
+void Day01(string), Day02(string), Day03(string), Day04(string);
 
 vector<function<void (string)> > day_func{Day01, Day02, Day03, Day04};
+
+void measure_time(bool output)
+{
+    using namespace chrono;
+    static const bool time_measure = false;
+    if(time_measure)
+    {
+        static steady_clock::time_point time = steady_clock::now();
+        steady_clock::time_point time2 = steady_clock::now();
+        if(output)
+            cout << "Time: " << duration_cast<microseconds>(time2 - time).count() << " µs\n";
+        time = time2;
+    }
+}
 
 string day_name(int n)
 {
@@ -24,6 +38,7 @@ string input_file_name(int n)
 void exec_day(int n)
 {
     day_func[n - 1](input_file_name(n));
+    measure_time();
 }
 
 void exec_all()
@@ -38,6 +53,6 @@ void exec_all()
 
 int main(int argc, const char * argv[])
 {
-    exec_day(3);
+    exec_all();
     return 0;
 }
