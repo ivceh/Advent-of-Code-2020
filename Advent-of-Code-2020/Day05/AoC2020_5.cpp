@@ -25,6 +25,8 @@ void Day05(string input_file_path)
         // C function to read numbers in any base (2 in this case)
         V.push_back((int)strtol(S.c_str(), &endpointer, 2));
     }
+    in.close();
+    
     sort(V.begin(), V.end());
     cout << "Part One: " << V.back() << endl;
     for(i = 0; i < V.size() - 1; ++i)
