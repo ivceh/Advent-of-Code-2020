@@ -3,14 +3,14 @@ int i, j, k, n, cnt, cnt2;
 ifstream in;
 string line;
 
-void Day01(string), Day02(string), Day03(string), Day04(string);
+void Day01(string), Day02(string), Day03(string), Day04(string), Day05(string);
 
-vector<function<void (string)> > day_func{Day01, Day02, Day03, Day04};
+vector<function<void (string)> > day_func{Day01, Day02, Day03, Day04, Day05};
 
 void measure_time(bool output)
 {
     using namespace chrono;
-    static const bool time_measure = false;
+    static const bool time_measure = true;
     if(time_measure)
     {
         static steady_clock::time_point time = steady_clock::now();
@@ -53,6 +53,7 @@ void exec_all()
 
 int main(int argc, const char * argv[])
 {
+    measure_time(false);
     exec_all();
     return 0;
 }
