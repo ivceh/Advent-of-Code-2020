@@ -23,7 +23,7 @@ using namespace std;
 
 extern int i, j, k, n, cnt, cnt2;
 extern ifstream in;
-extern string line;
+extern string line, str_temp;
 
 void measure_time(bool output = true);
 

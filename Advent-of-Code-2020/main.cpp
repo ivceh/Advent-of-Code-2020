@@ -1,11 +1,13 @@
 #include "my_AoC_utils.h"
 int i, j, k, n, cnt, cnt2;
 ifstream in;
-string line;
+string line, str_temp;
 
-void Day01(string), Day02(string), Day03(string), Day04(string), Day05(string);
+void Day01(string), Day02(string), Day03(string), Day04(string), Day05(string),
+    Day06(string);
 
-vector<function<void (string)> > day_func{Day01, Day02, Day03, Day04, Day05};
+vector<function<void (string)> > day_func{Day01, Day02, Day03, Day04, Day05,
+    Day06};
 
 void measure_time(bool output)
 {
@@ -54,6 +56,6 @@ void exec_all()
 int main(int argc, const char * argv[])
 {
     measure_time(false);
-    exec_all();
+    exec_day(6);
     return 0;
 }
