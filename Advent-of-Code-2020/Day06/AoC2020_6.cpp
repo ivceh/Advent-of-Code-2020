@@ -37,6 +37,7 @@ void Day06(string input_file_path)
     }
     in.close();
     
+    cnt = cnt2 = 0;
     for(auto Group : V)
     {
         for(char c = 'a'; c <= 'z'; ++c)
