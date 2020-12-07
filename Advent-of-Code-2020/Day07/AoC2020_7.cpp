@@ -3,6 +3,10 @@
 namespace // to avoid duplicate variable definition error
 {
     // put global variables here
+
+    // keys: all bags mentioned
+    // values: keys: bags directly contained in key bag
+    //         values: their quantities
     map<string, map<string, int> > Bags;
 }
 
@@ -15,7 +19,7 @@ bool contains_x(string bag, string x)
         return it->second;
     else
     {
-        for(auto str_temp2 : Bags[bag])
+        for(pair<string, int> const str_temp2 : Bags[bag])
         {
             if(str_temp2.first == x || contains_x(str_temp2.first, x))
             {
@@ -75,7 +79,7 @@ void Day07(string input_file_path)
     in.close();
     
     cnt = 0;
-    for(auto P : Bags)
+    for(pair<string, map<string, int> > P : Bags)
         if(contains_x(P.first, "shiny gold"))
             ++cnt;
     cout << "Part One: " << cnt << endl;
