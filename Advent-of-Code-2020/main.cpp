@@ -4,10 +4,10 @@ ifstream in;
 string line, str_temp;
 
 void Day01(string), Day02(string), Day03(string), Day04(string), Day05(string),
-    Day06(string);
+    Day06(string), Day07(string);
 
 vector<function<void (string)> > day_func{Day01, Day02, Day03, Day04, Day05,
-    Day06};
+    Day06, Day07};
 
 void measure_time(bool output)
 {
@@ -28,27 +28,27 @@ string day_name(int n)
     return "Day" + to_string(n / 10) + to_string(n % 10);
 }
 
-string input_file_name(int n)
+string input_file_name(int n, string input_name)
 {
     string main_path = __FILE__, main_name = "main.cpp";
     main_path.replace(main_path.size() - main_name.size(),
                       main_name.size(),
-                      day_name(n) + "/input.txt");
+                      day_name(n) + "/" + input_name);
     return main_path;
 };
 
-void exec_day(int n)
+void exec_day(int n, string input_name)
 {
-    day_func[n - 1](input_file_name(n));
+    day_func[n - 1](input_file_name(n, input_name));
     measure_time();
 }
 
-void exec_all()
+void exec_all(string input_name)
 {
     for(int i = 0; i < day_func.size(); ++i)
     {
         cout << day_name(i + 1) << endl;
-        exec_day(i + 1);
+        exec_day(i + 1, input_name);
         cout << endl;
     }
 }
@@ -56,6 +56,6 @@ void exec_all()
 int main(int argc, const char * argv[])
 {
     measure_time(false);
-    exec_day(6);
+    exec_all("input.txt");
     return 0;
 }
