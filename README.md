@@ -13,3 +13,4 @@ My "utils" header file: [my_AoC_utils.h](Advent-of-Code-2020/my_AoC_utils.h)
 | 04  | [Passport Processing](https://adventofcode.com/2020/day/4)                | [AoC2020_4.cpp](Advent-of-Code-2020/Day04/AoC2020_4.cpp)                  |
 | 05  | [Binary Boarding](https://adventofcode.com/2020/day/5)                    | [AoC2020_5.cpp](Advent-of-Code-2020/Day05/AoC2020_5.cpp)                  |
 | 06  | [Custom Customs](https://adventofcode.com/2020/day/6)                     | [AoC2020_6.cpp](Advent-of-Code-2020/Day06/AoC2020_6.cpp)                  |
+| 07  | [Handy Haversacks](https://adventofcode.com/2020/day/7)                   | [AoC2020_7.cpp](Advent-of-Code-2020/Day07/AoC2020_7.cpp)                  |
