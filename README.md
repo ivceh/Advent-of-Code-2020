@@ -14,3 +14,5 @@ My "utils" header file: [my_AoC_utils.h](Advent-of-Code-2020/my_AoC_utils.h)
 | 05  | [Binary Boarding](https://adventofcode.com/2020/day/5)                    | [AoC2020_5.cpp](Advent-of-Code-2020/Day05/AoC2020_5.cpp)                  |
 | 06  | [Custom Customs](https://adventofcode.com/2020/day/6)                     | [AoC2020_6.cpp](Advent-of-Code-2020/Day06/AoC2020_6.cpp)                  |
 | 07  | [Handy Haversacks](https://adventofcode.com/2020/day/7)                   | [AoC2020_7.cpp](Advent-of-Code-2020/Day07/AoC2020_7.cpp)                  |
+| 08  | [Handheld Halting](https://adventofcode.com/2020/day/8)                   | [AoC2020_8.cpp](Advent-of-Code-2020/Day08/AoC2020_8.cpp)                  |
+| 09  | [Encoding Error](https://adventofcode.com/2020/day/9)                     | [AoC2020_9.cpp](Advent-of-Code-2020/Day09/AoC2020_9.cpp)                  |
