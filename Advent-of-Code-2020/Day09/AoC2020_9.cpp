@@ -19,8 +19,8 @@ void Day09(string input_file_path)
     
     for(i = 25; i < V.size(); ++i)
     {
-        for(j = i-25; j < i; ++j)
-            for(k = i-25; k<i; ++k)
+        for(j = i - 25; j < i; ++j)
+            for(k = j + 1; k < i; ++k)
             {
                 if(V[j] + V[k] == V[i])
                     goto found;
