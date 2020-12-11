@@ -33,7 +33,7 @@
 
 # Input
 **/input.txt
-**/input2.txt
+**/input[0-9].txt
 
 # Xcode Project
 *.xcodeproj/*

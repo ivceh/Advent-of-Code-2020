@@ -4,10 +4,11 @@ ifstream in;
 string line, str_temp;
 
 void Day01(string), Day02(string), Day03(string), Day04(string), Day05(string),
-    Day06(string), Day07(string), Day08(string), Day09(string), Day10(string);
+    Day06(string), Day07(string), Day08(string), Day09(string), Day10(string),
+    Day11(string);
 
 vector<function<void (string)> > day_func{Day01, Day02, Day03, Day04, Day05,
-    Day06, Day07, Day08, Day09, Day10};
+    Day06, Day07, Day08, Day09, Day10, Day11};
 
 void measure_time(bool output)
 {

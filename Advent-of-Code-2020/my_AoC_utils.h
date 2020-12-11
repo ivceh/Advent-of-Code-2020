@@ -19,6 +19,7 @@
 #include <bitset>
 #include <cctype>
 #include <chrono>
+#include <numeric>
 using namespace std;
 
 extern int i, j, k, n, cnt, cnt2;
