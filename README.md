@@ -18,3 +18,4 @@ My "utils" header file: [my_AoC_utils.h](Advent-of-Code-2020/my_AoC_utils.h)
 | 09  | [Encoding Error](https://adventofcode.com/2020/day/9)                     | [AoC2020_9.cpp](Advent-of-Code-2020/Day09/AoC2020_9.cpp)                  |
 | 10  | [Adapter Array](https://adventofcode.com/2020/day/10)                     | [AoC2020_10.cpp](Advent-of-Code-2020/Day10/AoC2020_10.cpp)                |
 | 11  | [Seating System](https://adventofcode.com/2020/day/11)                    | [AoC2020_11.cpp](Advent-of-Code-2020/Day11/AoC2020_11.cpp)                |
+| 12  | [Rain Risk](https://adventofcode.com/2020/day/12)                         | [AoC2020_12.cpp](Advent-of-Code-2020/Day12/AoC2020_12.cpp)                |
