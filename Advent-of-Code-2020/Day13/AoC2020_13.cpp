@@ -28,6 +28,7 @@ void Day13(string input_file_path)
         else
             Buses.push_back(stoi(line));
     }
+    in.close();
     
     // solve Part One
     int min_wait = UNDEFINED, minID = UNDEFINED;
