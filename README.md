@@ -20,3 +20,4 @@ My "utils" header file: [my_AoC_utils.h](Advent-of-Code-2020/my_AoC_utils.h)
 | 11  | [Seating System](https://adventofcode.com/2020/day/11)                    | [AoC2020_11.cpp](Advent-of-Code-2020/Day11/AoC2020_11.cpp)                |
 | 12  | [Rain Risk](https://adventofcode.com/2020/day/12)                         | [AoC2020_12.cpp](Advent-of-Code-2020/Day12/AoC2020_12.cpp)                |
 | 13  | [Shuttle Search](https://adventofcode.com/2020/day/13)                    | [AoC2020_13.cpp](Advent-of-Code-2020/Day13/AoC2020_13.cpp)                |
+| 14  | [Docking Data](https://adventofcode.com/2020/day/14)                      | [AoC2020_14.cpp](Advent-of-Code-2020/Day14/AoC2020_14.cpp)                |
