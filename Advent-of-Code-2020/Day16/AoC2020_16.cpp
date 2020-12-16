@@ -29,7 +29,8 @@ void Day16(string input_file_path)
         string::const_iterator search_start = line.begin(), search_end = line.end();
         if(regex_search(search_start, search_end, m, r))
         {
-            Rules.push_back(make_tuple(m.str(1), stoi(m.str(2)), stoi(m.str(3)),                                stoi(m.str(4)), stoi(m.str(5))));
+            Rules.push_back(make_tuple(m.str(1), stoi(m.str(2)), stoi(m.str(3)),
+                                       stoi(m.str(4)), stoi(m.str(5))));
         }
         else
             break;
@@ -87,7 +88,8 @@ void Day16(string input_file_path)
         {
             if(count(PossibleFields[i].begin(), PossibleFields[i].end(), true) == 1)
             {
-                j = (int)(find(PossibleFields[i].begin(), PossibleFields[i].end(), true) - PossibleFields[i].begin());
+                j = (int)(find(PossibleFields[i].begin(), PossibleFields[i].end(), true)
+                          - PossibleFields[i].begin());
                 for(k = 0; k < PossibleFields.size(); ++k)
                     if(i != k)
                         PossibleFields[k][j] = false;
