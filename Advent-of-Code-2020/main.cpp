@@ -5,10 +5,26 @@ string line, str_temp;
 
 void Day01(string), Day02(string), Day03(string), Day04(string), Day05(string),
     Day06(string), Day07(string), Day08(string), Day09(string), Day10(string),
-    Day11(string), Day12(string), Day13(string), Day14(string), Day15(string);
+    Day11(string), Day12(string), Day13(string), Day14(string), Day15(string),
+    Day16(string);
 
 vector<function<void (string)> > day_func{Day01, Day02, Day03, Day04, Day05,
-    Day06, Day07, Day08, Day09, Day10, Day11, Day12, Day13, Day14, Day15};
+    Day06, Day07, Day08, Day09, Day10, Day11, Day12, Day13, Day14, Day15,
+    Day16};
+
+string int1000separator(long long n)
+{
+    string s = to_string(n);
+    list<char> s2(s.begin(), s.end());
+    n = 0;
+    for(auto it = prev(s2.end()); it != s2.begin(); --it)
+        if((++n) % 3 == 0)
+        {
+            s2.insert(it, '\'');
+            --it;
+        }
+    return string(s2.begin(), s2.end());
+}
 
 void measure_time(bool output)
 {
@@ -19,7 +35,9 @@ void measure_time(bool output)
         static steady_clock::time_point time = steady_clock::now();
         steady_clock::time_point time2 = steady_clock::now();
         if(output)
-            cout << "Time: " << duration_cast<microseconds>(time2 - time).count() << " µs\n";
+            cout << "Time: "
+                 << int1000separator(duration_cast<microseconds>(time2 - time).count())
+                 << " µs\n";
         time = time2;
     }
 }
@@ -38,25 +56,31 @@ string input_file_name(int n, const string& input_name)
     return main_path;
 };
 
-void exec_day(int n, const string& input_name)
+void exec(int n, const string& input_name)
 {
     day_func[n - 1](input_file_name(n, input_name));
     measure_time();
 }
 
-void exec_all(const string& input_name)
+void exec(const string& input_name)
 {
+    using namespace chrono;
+    steady_clock::time_point time = steady_clock::now();
     for(int i = 0; i < day_func.size(); ++i)
     {
         cout << day_name(i + 1) << endl;
-        exec_day(i + 1, input_name);
+        exec(i + 1, input_name);
         cout << endl;
     }
+    steady_clock::time_point time2 = steady_clock::now();
+    cout << "Total time: "
+         << int1000separator(duration_cast<microseconds>(time2 - time).count())
+         << " µs\n\n";
 }
 
 int main(int argc, const char * argv[])
 {
     measure_time(false);
-    exec_all("input.txt");
+    exec("input.txt");
     return 0;
 }

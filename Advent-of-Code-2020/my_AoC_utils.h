@@ -21,6 +21,9 @@
 #include <chrono>
 #include <numeric>
 #include <complex>
+#include <array>
+#include <tuple>
+#include <algorithm>
 using namespace std;
 
 extern int i, j, k, n, cnt, cnt2;

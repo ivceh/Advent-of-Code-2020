@@ -22,3 +22,4 @@ My "utils" header file: [my_AoC_utils.h](Advent-of-Code-2020/my_AoC_utils.h)
 | 13  | [Shuttle Search](https://adventofcode.com/2020/day/13)                    | [AoC2020_13.cpp](Advent-of-Code-2020/Day13/AoC2020_13.cpp)                |
 | 14  | [Docking Data](https://adventofcode.com/2020/day/14)                      | [AoC2020_14.cpp](Advent-of-Code-2020/Day14/AoC2020_14.cpp)                |
 | 15  | [Rambunctious Recitation](https://adventofcode.com/2020/day/15)           | [AoC2020_15.cpp](Advent-of-Code-2020/Day15/AoC2020_15.cpp)                |
+| 16  | [Ticket Translation](https://adventofcode.com/2020/day/16)                | [AoC2020_16.cpp](Advent-of-Code-2020/Day16/AoC2020_16.cpp)                |
