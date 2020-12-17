@@ -7,7 +7,6 @@ namespace // to avoid duplicate variable definition error
     vector<vector<int> > NearbyNumbers;
     set<pair<int, int> > InvalidValues;
 
-    // Unfortunately bitset's size must be known at compile-time.
     // rows: positions
     // columns: possible fields
     // true if possible, false if impossible
@@ -42,6 +41,7 @@ void Day16(string input_file_path)
     stringstream linestream(line);
     while(getline(linestream, str_temp, ','))
         MyNumbers.push_back(stoi(str_temp));
+    NearbyNumbers.push_back(MyNumbers);
     
     // find and read nearby tickets
     while(getline(in, line) && line != "nearby tickets:");
