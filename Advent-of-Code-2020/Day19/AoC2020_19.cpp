@@ -8,11 +8,11 @@ vector<string> Lines;
 
 string regex_rule(int n, int part)
 {
-    if(part == 2 && (n == 8 || n == 11))
+    if(part == 2 && (n == 0 || n == 8 || n == 11))
     {
         if(n == 8)
             return regex_rule(42, 2) + "+";
-        else // n == 11
+        else // n == 0 || n == 11
         {
             string result = "(", r42 = regex_rule(42, 2), r31 = regex_rule(31, 2);
             
@@ -22,8 +22,11 @@ string regex_rule(int n, int part)
             {
                 if(i > 1)
                     result.push_back('|');
-                result += r42 + "{" + to_string(i) + "}" +
-                          r31 + "{" + to_string(i) + "}";
+                if(n == 11)
+                    result += r42 + "{" + to_string(i) + "}";
+                else // n == 0, since my input contains rule "0: 8 11"
+                    result += r42 + "{" + to_string(i + 1) + ",}";
+                result += r31 + "{" + to_string(i) + "}";
             }
             result.push_back(')');
             return result;
