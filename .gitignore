@@ -31,9 +31,11 @@
 *.out
 *.app
 
-# Input
+# Input and output
 **/input.txt
 **/input[0-9].txt
+**/output.txt
+**/output[0-9].txt
 
 # Xcode Project
 *.xcodeproj/*
